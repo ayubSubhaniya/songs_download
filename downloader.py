@@ -93,7 +93,7 @@ def main(file_path, base_path):
 
     test = os.listdir(base_path)
     for item in test:
-        if not item.endswith(".mp3"):
+        if not item.endswith(".mp3") or not item.endswith(".txt"):
             os.remove(os.path.join(base_path, item))
 
 
